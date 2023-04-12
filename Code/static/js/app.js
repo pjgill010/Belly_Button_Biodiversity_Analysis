@@ -1,10 +1,10 @@
 const URL = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json"
 
-
+// Define Funtions
 function updateMenu() {
     // Use D3 to select the dropdown menu
     let dropdownMenu = d3.select("#selDataset");
-
+    // URL, charts, tables
     d3.json(URL).then(function(data) {
         console.log(data);
         names = data.names
@@ -15,7 +15,6 @@ function updateMenu() {
         charts(names[0])
         table(names[0])
       });
-
 
   }
 
@@ -52,7 +51,7 @@ function updateMenu() {
        sample_values= sampleResults.sample_values
 
        otu_labels= sampleResults.otu_labels
-
+        // Bar Chart
        var bar_data = [{
         type: 'bar',
         x: sample_values.slice(0,10).reverse(),
@@ -65,7 +64,7 @@ function updateMenu() {
         title: 'Colored Bar Chart',
      
       };
-      
+      // Bubble chart
       Plotly.newPlot('bar', bar_data, bar_layout);
 
       var bubble_data = [{
