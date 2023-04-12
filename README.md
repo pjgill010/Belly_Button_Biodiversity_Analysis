@@ -5,9 +5,10 @@
 
 <img width="560" alt="Dash 3" src="https://user-images.githubusercontent.com/118948437/231324756-4f85fdb1-7617-4dbb-9719-7ee6a5cd10b5.png">
 
-Visit http://127.0.0.1:5500/Code/index.html for dashboard
+Visit http://127.0.0.1:5500/Code/index.html for interactive dashboard
 
 ## Summary:
 - Utilized D3, JS, and Plotly for functionality 
+- Demographic Info displays ID, ethnicity, gender, age, location, bbtype, and wfreq per Test Subject ID
 - Horizontal bar chart shows top 10 OTUs found per Test Subject ID
 - Bubble chart shows each sample per Test Subject
